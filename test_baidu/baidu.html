@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+	<title>百度一下，你就知道</title>
+	<!--<link rel="icon" href="images/bitbug_favicon.ico" type="img/x-ico" /> 手动添加网站标题icon-->
+	<style type="text/css">
+		#logo{                  /* id 选择器*/
+			text-align: center;/* 方法一 可行*/
+			padding-top: 100px;
+		}
+		.baiduBtnClass  /* 类选择器*/
+		{
+			color: white;
+			background-color: blue;
+			width: 110px;
+			height: 37px;
+		}
+		.searchClass{      /* 类选择器*/
+			font:16px/18px arial;
+			height: 36px;
+		}
+		.baiduClass input  /* 后代选择器*/
+		{
+			width: 500px;
+		}
+		#ul
+		{
+          position: absolute;
+          top:0;
+          right:0;
+          margin: 19px 0 0 16px;
+          padding:0 16px 0 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="logo">
+		<img class="logo-src" src="images/bd_logo1.png" width="270" height="129" usemap="#logo_mp" alt="百度背景图"/>
+		<map name="logo_mp">
+			<area style="outline:none;" hidefocus="true" shape="rect" coords="0,0,270,129" href="www.baidu.com" onmousedown="return ns_c({fm: 'tab', tab: 'felogo', rsv_platform: 'wwwhome' })" target="_blank" title="点击一下，了解更多">
+		</map>
+		<br/>
+		<form id="form">
+			<span class="baiduClass">
+			   <input id="id_s" class="searchClass" type="text" name="search" value maxlength="255">
+			</span>
+			<span>
+			   <input id="is_baidubtn"class="baiduBtnClass" type="submit" name="baidu" value="百度一下">
+			</span>
+		</form>
+	</div>
+	<div id="ul">
+		<a href="http://new.baidu.com" name="title_news" class="mnav">新闻</a>
+		<a href="http://www.hao123.com" name="title_hao123" class="mnav">hao123</a>
+		<a href="http://map.baidu.com" name="title_map" class="mnav">地图</a>
+		<a href="http://v.baidu.com" name="title_video" class="mnav">视频</a>
+		<a href="http://tieba.com" name="title_tieba" class="mnav">贴吧</a>
+		<a href="http://www.baidu.com/more/" name="title_more" class="more">更多产品</a>
+	</div>
+</body>
+</html>
