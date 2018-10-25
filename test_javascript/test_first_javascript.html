@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>第一个 javascript 脚本测试文档</title>	
+	</head>
+	<body>
+		<ul id="list">
+			<li class="line" title="这是 html">html</li>
+			<li class="line" title="这是 css">css</li>
+			<li class="line" title="这是 javascript">javascript</li>
+			<li class="lastLine" title="这是 JQuery">JQuery</li>
+		</ul>
+		<script type="text/javascript">
+
+         
+		/*	 对不支持 getElementsByClassName 方法的另一种解决方案 
+		function getElementsByClassName(node,className)
+			{
+              if(node.getElementsByClassName)
+              {
+              	return node.getElementsByClassName(className);
+              }
+              else
+              {
+                var arr = new Array();
+                var elements = node.getElementsByTagName("*");
+
+              	for(var i = 0;i<elements.length;i++)
+                  {
+                  	if(elements[i].className.indexOf(className)!=-1)
+                  	{
+                  		arr[arr.length]=elements[i];
+                  	}
+                  }
+                  return arr;
+              }
+			}
+            */
+
+			/* 测试1
+			alert(typeof document.getElementById(list));
+			alert(document.getElementsByTagName("li").length);
+			alert(document.getElementsByClassName("line").length);
+			*/
+            /* 测试2 object.getAttribute();
+			var attrs = document.getElementsByTagName("li");
+			for(var i = 0;i<attrs.length;i++)
+			{
+               alert(attrs[i].getAttribute("title"));
+			}
+            */
+             /*测试3 object.setAttribute;
+            var attrs = document.getElementsByTagName("li");
+            for(var i = 0; i<attrs.length;i++)
+            {
+               attrs[i].setAttribute("title","这是测试 title");
+            }
+             */
+		</script>
+	</body>
+</html
