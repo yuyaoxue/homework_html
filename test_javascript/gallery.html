@@ -3,33 +3,60 @@
 <head>
 	<meta charset="utf-8" />
 	<title> Image Gallery</title>
-    <link rel="stylesheet" href="styles/layout.css" media="screen" />
+    <link rel="stylesheet" href="styles/layout.css" type ="text/css" media="screen" />
 </head>
 <body>
 <h1>Snapshots</h1>
-<ol>
+<ol id="imagegallery">
     <li>
-     <a href="images/girl3.jpg" onclick="showPic(this);return false;" title="Choose an image">home</a>
+     <a href="images/girl3.jpg" title="Choose an image">
+     <img src="images/mini_girl3.jpg" alt="home" />
+ </a>
      </li>
 	<li >
-        <a href="images/night.jpg" onclick="showPic(this);return false;" title="beautiful night">night</a>
+        <a href="images/night.jpg" title="beautiful night">
+        <img src="images/mini_night.jpg" alt="night" />
+    </a>
     </li>
     	<li >
-        <a href="images/friend.jpg" onclick="showPic(this);return false;" title="good friend">friend</a>
+        <a href="images/friend.jpg" title="good friend">
+        <img src="images/mini_friend.jpg" alt="friend" />
+    </a>
     </li>
     	<li >
-        <a href="images/flower.jpg" onclick="showPic(this);return false;" title="flower">flower</a>
+        <a href="images/flower.jpg" title="flower">
+        <img src="images/mini_flower.jpg" alt="flower" />
+    </a>
     </li>
     	<li >
-        <a href="images/street.jpg" onclick="showPic(this);return false;" title="street">street</a>
+        <a href="images/street.jpg" title="street">
+        <img src="images/mini_street.jpg" alt="street" />
+    </a>
     </li>
     	<li >
-        <a href="images/dream.jpg" onclick="showPic(this);return false;" title="dream">dream</a>
+        <a href="images/dream.jpg" title="dream">
+        <img src="images/mini_dream.jpg" alt="dream" />
+    </a>
     </li>
 </ol>
 <img id = "placeHolder" src="images/girl3.jpg" width="50%" alt="My Image Gallery" />
 <p id="description">Choose an image</p>
 <script type="text/javascript" src="scripts/ShowPic.js"></script>
-
+<script type="text/javascript">
+    function addLoadEvent(func){
+       var oldonload = window.onload;
+       if(typeof window.onload != 'function')
+       {
+        window.onload = func;
+       }else
+       {
+        window.onload = function(){
+            oldonload();
+            func();
+        }
+       }
+    }
+    addLoadEvent(prepareGallery);
+</script>
 </body>
 </html> 
