@@ -74,6 +74,21 @@ article img{
 	border-width: 0;
 	outline-width: 0;
 }
+
+#imagegallery li{
+	display: inline;
+}
+
+td{
+	padding: .5em 3em;
+}
+
+label{
+	display:block;
+}
+fieldset{
+	border:0;
+}
 /*
 #home header {
 	background-image: url(../images/home.jpg);
