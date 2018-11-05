@@ -1,6 +1,6 @@
 function addClass(element,value)
 {
-	if(!element.classname)
+	if(!element.className)
 	{
 		element.className = value;
 	}else{
