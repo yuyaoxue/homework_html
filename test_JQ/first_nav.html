@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+			<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+		<title> 导航栏实例一</title>
+		<style type="text/css">
+			 #menu{width:300px;}
+			.haschildren{background:#555,color:#fff;cursor:pointer;}
+			.highlight{color:#fff;background:red;}
+			.show_element{display: block;};
+			div{padding:0;margin:10px auto;}
+			div a{background:#888;display:none;float:left;width:300px;}
+		</style>
+	</head>
+	<body>
+		   <div id="menu">
+		   	<div class="has_children">
+		   		<span>第一章-认识  jQuery</span>
+		   		<a>1.1-JavaScript和JavaScript库</a>
+		   		<a>1.2-加入 jQuery</a>
+		   		<a>1.3-编写简单 jQuery代码</a>
+		   		<a>1.4-jQuer 对象和DOM 对象</a>
+		        <a>1.5-解决jquery和其他库的冲突</a>
+		        <a>1.7-小结</a>
+		   	</div>
+		   	<div class="has_children">
+		   		<span>第二章-jQuery选择器</span>
+		   		<a>2.1-JQuery选择器是什么</a>
+		   		<a>2.2-JQuery选择器的优势</a>
+		   		<a>2.3-JQuery选择器</a>
+		   		<a>2.4-应用 JQuery 改写实例</a>
+		   		<a>2.5-选择器中的一些注意事项</a>
+		   		<a>2.6-案例研究-类似淘宝网品牌列表的效果</a>
+		   		<a>2.7-还有其他选择器吗？</a>
+		   		<a>2.8-小结</a>
+		   	</div>
+		   	<div class="has_children">
+		   		<span>第三章-jQuery中的DOM操作</span>
+		   		<a>3.1-DOM 操作的分类</a>
+		   		<a>3.2-jQuery中的DOM操作</a>
+		   		<a>3.3-案例研究-某网站超链接和图片提示效果</a>
+		   		<a>3.4-小结</a>
+		   	</div>
+		   </div>
+	</body>
+	<script src="scripts/addClass.js"></script>
+    <script type="text/javascript">
+    /*当鼠标点击到class中的has_children 的元素上的时候，给其添加一个名 highlight 的class，然后将其内部<a>子元素都显示出来，
+    		 * 并且将单击的class 中含有 has_children 元素的同辈元素都去掉一个名为 highlight的class，同时同辈元素内部的 <a>子元素全部隐藏。
+    		 */
+    		
+        /* 使用 jquery方法实现
+    	$(".has_children").click(function(){
+    		
+    		$(this).addClass("highlight").children("a").show().end().siblings().removeClass("highlight").children("a").hide();
+    	});
+    	*/
+    	/*使用原生 js实现
+    	var has_childrens = document.getElementsByClassName("has_children");
+    	for(var i = 0;i < has_childrens.length;i++)
+    	{
+    		has_childrens[i].onclick = function()
+    		{
+    			for(var a = 0;a < has_childrens.length;a++)
+    			{
+    				if(has_childrens[a] != this)
+    				{
+    					var a_childrens = has_childrens[a].getElementsByTagName("a");
+    			        removeClass(has_childrens[a],"highlight");
+    			        for(var b = 0;b < a_childrens.length;b++)
+    					{
+    						removeClass(a_childrens[b],"show_element");
+    					}
+    				}
+    			}
+    			var a_childrens = this.getElementsByTagName("a");
+    			addClass(this,"highlight");	
+    			for(var j = 0;j < a_childrens.length;j++)
+    			{
+    				addClass(a_childrens[j],"show_element");
+    			}
+    		}
+    	}
+    	*/
+    </script>
+</html>

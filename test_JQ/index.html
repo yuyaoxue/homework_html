@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> hello jQuery</title>
+		<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		   /* jquery的写法   */
+			$(document).ready(function()//相当于传统的 javascript中的 window.onload
+			{
+				alert("hello world jquery");
+			});	
+			$(function(){
+				alert("jq 的函数调用简化写法");
+			});
+			
+			/* javascript 的写法
+			window.onload = function()
+			{
+				alert("hello world javascript");
+			}
+			*/
+			
+		</script>
+	</body>
+</html>
