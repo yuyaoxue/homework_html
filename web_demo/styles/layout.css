@@ -1,0 +1,119 @@
+/* pre元素：可定义预格式化的文本，被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。常见应用就是用来表示计算机的源代码。
+ * form元素：表单
+ * fieldset元素：可将表单内的相关元素分组；可将表单内容的一部分打包，生成一组相关表单的字段
+ * textarea：定义多行的文本输入控件
+ * blockquote:长引用标签。缩进。必须包含块级元素
+ * 
+ * dl/ol/li 定义列表/有序列表/无序列表
+ * dt/dd 标签定义了定义列表中的项目/在定义列表中定义条目的定义部分
+ * th/td 表头单元格 - 包含表头信息（由 th 元素创建）/标准单元格 - 包含数据（由 td 元素创建）
+ * h1~h6 文档标题，文字加粗样式，从 1-6，文字大小逐渐减少
+ * p 段落
+ * 
+ *  */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #fff;
+	overflow-x:hidden;/* 如果内容溢出了元素内容区域，是否对内容的左/右边缘进行裁剪。*/
+	color:#666;
+	font-size:14px;
+	font-family:"微软雅黑";
+	position:relative;/*这个属性定义建立元素布局所用的定位机制。任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。
+	                   * 生成相对定位的元素，相对于其正常位置进行定位。
+	                   */
+	min-width:1200px;/*	设置元素的最小宽度。该属性值会对元素的宽度设置一个最小限制。因此，元素可以比指定值宽，但不能比其窄。不允许指定负值。 */
+	width:100%;/*这个属性定义元素内容区的宽度，在内容区外面可以增加内边距、边框和外边距。 */
+}
+body{
+	font:12px/1.231 "arial, helvetica, sans-serif";/* 字体大小/字体行高 ；规定元素的字体系列：可以把多个字体名称作为一个“回退”系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。也就是说，font-family 属性的值是用于某个元素的字体族名称或/及类族名称的一个优先表。浏览器会使用它可识别的第一个值。 */
+}
+
+.wrap_header{
+	height:110px;
+	position: relative; /* 设置为相对位置，如果子元素设置 position:absolute 就是相对于父元素绝对位置了。*/
+	z-index:9999; /* 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。  
+        		   * 元素可拥有负的 z-index 属性值。
+                   * 注释：Z-index 仅能在定位元素上奏效（例如 position:absolute;）！
+                   * 设置为9999，作用是永远在最上层？ */
+	backgound:#fff;/* 如果只需要设置背景颜色的话，backgound和 background-color 有什么区别 */
+	min-width:1200px;/*为什么要设置最小宽度 */
+	transition: all 0.5s;/* 过渡属性。 语法： transition: property duration timing-function delay; */
+}
+.wrap_header .headerbox{
+	position: fixed;/* 位置固定 */
+	top:0;
+	left:0;
+	width:100%;/* 设置百分之百宽度 */
+	min-width:1200px;
+	z-index: 9;
+	height: 100px;
+	background-color:#666677;
+	/*background:url(); */
+	border-bottom: 1px solid #e4e4e4;
+}
+.wrap_header .headerbox.cur{
+	height:64px;
+}
+.clearfix{
+	zoom: 1;/* 放大    找不到资料*/
+}
+.part1{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #D43F3A;
+}
+.part2{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #D58512;
+}
+.part3{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #EECC66;
+}
+.part1{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #008000;
+}
+.part4{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #4CAE4C;
+}
+.part5{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #0000FF;
+}
+.part6{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #615C85;
+}
+.part7{
+	width:100%;
+	min-width:1200px;
+	height:500px;
+	background-color: #009F95;
+}
+.footer{
+	width:100%;
+	min-width: 1200px;
+	height:200px;
+	background-color:#C4E3F3;
+}
+
+
