@@ -15,6 +15,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
     margin: 0;
     padding: 0;
 }
+ol,ul{list-style:none;}
 
 body{
 	background-color: #fff;
@@ -31,7 +32,10 @@ body{
 body{
 	font:12px/1.231 "arial, helvetica, sans-serif";/* 字体大小/字体行高 ；规定元素的字体系列：可以把多个字体名称作为一个“回退”系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。也就是说，font-family 属性的值是用于某个元素的字体族名称或/及类族名称的一个优先表。浏览器会使用它可识别的第一个值。 */
 }
-
+address, caption, cite, code, dfn, em, i, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
 .wrap_header{
 	height:110px;
 	position: relative; /* 设置为相对位置，如果子元素设置 position:absolute 就是相对于父元素绝对位置了。*/
@@ -61,59 +65,53 @@ body{
 .clearfix{
 	zoom: 1;/* 放大    找不到资料*/
 }
-.part1{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #D43F3A;
+.wrap-header {height: 110px;position: relative;z-index: 9999;background: #fff;min-width: 1200px;transition: all 0.5s;}
+.wrap-header h1 {float: left;width: 267px;border-right: 1px solid #f0f0f0;height: 110px;text-align: center;transition: all 0.5s;}
+.wrap-header h1 a {display: block;height: 110px; transition: all 0.5s;}
+.wrap-header h1 .a1 {display: block;}
+.wrap-header h1 .a2 {display: none;}
+.wrap-header h1 img {display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;}
+.wrap-header h1 em {display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;width: 0;height: 100%;}
+
+.wrap-header .l_tit{
+	float: left;
+	width:226px;
+	boder-right:1px solid #f0f0f0;
+	height:110px;
+	text-indent: 35px;
+	transition:all .5s;
 }
-.part2{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #D58512;
+.wrap-header .l_tit .p1{
+	padding-top:33px;position:relative;height:16px;line-height:16px;color:#7e3c93;margin-bottom:6px;transition: all border-left-color;0.5s;
 }
-.part3{
+.wrap-header .l_tit .p1 a{color:#7E3C93;}
+.wrap-header .l_tit .p1 em{display: inline-block;*display: inline;*zoom:1;height:14px;line-height:14px;padding-bottom:2px;width:60px;text-align:center;color:#fff;background:url("../images/common/hbg01.png") no-repeat center;text-indent:0;font-size: 12px;}
+.wrap-header .l_tit .p2{font-size:16px;color:#666;}
+
+.wrap-header .nav{float: right;}
+.wrap-header .nav .navUl .navli{float: left;margin-right:50px;position:relative;}
+.wrap-header .nav .navUl .navli>a{display: block;height:110px;line-height:110px;font-size:16px;color:#999;position:relative;transition:all 0.5s;}
+.wrap-header .nav .navUl .navli em{display: block;width:0;height:4px;background:#7a3b8e;transition:all 0.5s;position:absolute;left:0;top:65px;opacity:0.8;}//opacity 是什么意思
+.wrap-header .nav .navUl .navli.cur>a ,.wrap-header .nav .navUl .navli:hover>a {color:#333;}
+.wrap-header .nav .navUl .navli.dl{height:45px;margin-top:32px;margin-right:20px;transition:20px;transition:all 0.5s;}
+.wrap-header .nav .navUl .navli.dl a{height:45px;;line-height:45px;width:65px;text-align:center;background:url("../images/common/dlzcbg.png") no-repeat center top;transition:all 0.25s;color:#333;}
+.wrap-header .nav .navUl .navli.dl:hover a{background:url("../images/common/dlzcbg.png") no-repeat center bottom;color:#fff;}
+.wrap-header .nav .navUl .navli.zc {height:45px;margin-top:32px;transition: all 0.5s;}
+.wrap-header .nav .navUl .navli.zc a{height:45px;line-height:45px;width:65px;text-align:center;background:url("../images/common/dlzcbg.png") no-repeat center bottom;color:#fff;}
+
+
+.part1,.part2,.part3,.part4,.part5,.part6,.part7{
 	width:100%;
 	min-width:1200px;
 	height:500px;
-	background-color: #EECC66;
-}
-.part1{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #008000;
-}
-.part4{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #4CAE4C;
-}
-.part5{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #0000FF;
-}
-.part6{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #615C85;
-}
-.part7{
-	width:100%;
-	min-width:1200px;
-	height:500px;
-	background-color: #009F95;
+	background-color: #eee;
+	border: 1px solid white;
 }
 .footer{
 	width:100%;
 	min-width: 1200px;
 	height:200px;
-	background-color:#C4E3F3;
+	background-color:#eee;
 }
 
 
