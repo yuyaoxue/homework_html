@@ -1,0 +1,118 @@
+*{
+	padding:0;margin:0;
+}
+.header{
+		width:100%;
+		padding:20px 0; /* 上下 左右*/
+		background-color:white;
+}
+.center{
+	    width:1200px;
+	    margin:0 auto;    
+}		
+.logo{
+	    width:190px; 
+}
+.main{
+	    width:100%;
+	    height:600px;
+	    /*background:url("../img/bg.jpg") no-repeat; */
+	   background:#80b9ff; 
+}
+.bg{
+	position:relative;/* 相对定位 ：login的第二种方法*/
+	height:600px;
+	background:url("../img/bg.jpg");
+	overflow:hidden;/*超出部分隐藏 */
+}
+.login{
+	/* 位置的 第一种方式 ：浮动
+	 * float: right;
+	margin-top:90px; */
+	
+	/*第二种 定位 
+	position:absolute;
+	right:0;
+	top:90px;*/
+	margin:90px 0 0 auto;
+	width:350px;
+	height:400px;
+	background:#fff;
+}
+.top{
+	width:300px;
+	height:18px;
+	line-height:18px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;/*文本对齐方式  */
+	padding-left:25px;
+	padding-top:25px;
+}
+.form{
+	padding:25px 25px 23px;
+}
+input{
+	width:300px;
+	height:40px;
+	margin-bottom:25px;
+}
+.submit{
+	background:#ff0036;
+	color:white;
+	border: none;
+}
+.user,.pwd{
+	border:1px solid #c3c3c3;
+	text-indent:50px;
+}
+.user{
+	background:url("../img/zhanghao.jpg") no-repeat;
+}
+.pwd{
+	background:url("../img/mima.jpg") no-repeat;
+}
+.link{
+    text-align:right;
+}
+.link a{
+	color:#6c6c6c;
+	text-decoration:none;
+	font-size:12px;
+}
+.link a:hover{
+	color:#ff0036;
+}
+
+.footer{
+	width:100%;
+	height:198px;
+	padding-top:30px;
+}
+.footer a{
+	text-decoration:none;
+	color:#6c6c6c;
+	font-size:12px;
+}
+.footer a:hover{
+	text-decoration:underline;
+}
+.footer .tmallinfo{
+	color:#fff;
+	line-height:25px;
+	word-spacing: 4px;
+}
+.footer .otherlink{
+	word-spacing:8px;
+	line-height:20px;
+}
+
+.footer .footer-copyright b{
+ color:#999;	
+}
+.footer .footer-copyright{
+	font-weight:400;
+	font-size:12px;
+	line-height:25px;
+}
+
