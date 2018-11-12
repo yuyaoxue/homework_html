@@ -1,0 +1,170 @@
+*{
+	padding:0;
+	margin: 0;
+}
+ol ,ul{
+	list-style:none;
+}
+body{
+	font-family:'Roboto-Regular'; 
+}
+body{
+	width:100%;
+	background:url("../img/slid2.jpg");
+	background-attachment: fixed;
+}
+.center{
+	width:1200px;
+	margin:0 auto;
+}
+.header{
+	width:100%;
+	height:100px;
+	background-color:#00A0DC;
+}
+.header .center{
+	color:#fff;
+	padding:20px 0;
+	position:relative;
+}
+.header a{
+	text-decoration:none;
+	color:#fff;
+}
+.header a h1
+{
+	display: inline;
+	padding-right:30px;
+}
+.header .nav{
+	display: inline-block;
+}
+.header .nav .navli{
+	display: inline;
+}
+
+.header .nav a{
+	text-decoration:none;
+	font-size:20px;
+	padding:40px 20px;
+}
+.header .nav a{
+	color:#fff;
+}
+.header .nav a:hover{
+	background-color:#F07818;
+}
+
+.header-info{
+	position: absolute;
+	right:0;
+	top:30px;
+	display: inline-block;
+}
+.header-info a{
+	font-size:20px;
+	padding:40px 20px;
+}
+.header-info a:hover{
+	background-color:#F07818;
+}
+
+.header-right{
+
+}
+
+.banner{
+	position:relative;
+	min-height:600px;
+	background-color:#F2F6F7;
+	padding:12em 0 0;
+}
+.container{
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.banner h2.hdng{
+	font-size:6em;
+	font-weight:600;
+}
+.banner h2 a:hover{
+	color:#F07818;
+}
+.banner a{
+	text-decoration:none;
+	color:#5D4B33;
+}
+.banner p{
+	font-size:1.3em;
+	margin:1em 0 3em;
+	letter-spacing:7px;
+	font-weight:700;
+	color:#F07818;
+}
+.banner_a{
+	font-size:1.5em;
+	font-weight: 800;
+	padding:0.5em 3em;
+	border:7px solid #5D4B33;
+}
+.banner-text{
+	position:absolute;
+	top:29%;
+	right:13%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.slist{
+	width:100%;
+	height:2000px;
+	background-color:#fff;
+	margin-bottom: 200px;
+	margin-top:100px;
+	padding-top:30px;
+}
+.footer{
+	width:100%;
+	height:200px;
+	background-color:#fff;
+}
+.first_list,.second_list{
+	float: left;
+	clear:both;
+}
+.list_item{
+	float:left;
+	margin:30px 20px;
+}
+.alert
+{
+	padding:15px;
+	margin-bottom:20px;
+	border:1px solid transparent;
+}
+.hot-product
+{
+	color:#A94442;
+	background-color:#f2dede;
+	border-color:#EBCCD1;
+}
+.new-product
+{
+	color:#31708F;
+	background-color:#b9edf7;
+	border-color:#bce8f1;
+}
