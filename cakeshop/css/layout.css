@@ -5,6 +5,9 @@
 ol ,ul{
 	list-style:none;
 }
+a{
+	text-decoration:none;
+}
 body{
 	font-family:'Roboto-Regular'; 
 }
@@ -20,7 +23,7 @@ body{
 .header{
 	width:100%;
 	height:100px;
-	background-color:#00A0DC;
+	background-color:#009F95;
 }
 .header .center{
 	color:#fff;
@@ -28,7 +31,6 @@ body{
 	position:relative;
 }
 .header a{
-	text-decoration:none;
 	color:#fff;
 }
 .header a h1
@@ -44,7 +46,6 @@ body{
 }
 
 .header .nav a{
-	text-decoration:none;
 	font-size:20px;
 	padding:40px 20px;
 }
@@ -93,7 +94,6 @@ body{
 	color:#F07818;
 }
 .banner a{
-	text-decoration:none;
 	color:#5D4B33;
 }
 .banner p{
@@ -137,18 +137,48 @@ body{
 	margin-top:100px;
 	padding-top:30px;
 }
-.footer{
-	width:100%;
-	height:200px;
-	background-color:#fff;
-}
+
 .first_list,.second_list{
 	float: left;
 	clear:both;
 }
 .list_item{
+	position:relative;
 	float:left;
-	margin:30px 20px;
+	margin:30px 10px;
+}
+.shopimg_over{
+	/* box-shadow: -1px -1px 1px #888888;  阴影 shadow */
+	 outline:#00405D solid thin;
+}
+.shopcheck{
+	width:100%;
+	position:absolute;
+	padding:10px 0;
+	bottom:40px;
+	background-color:#000;
+	color:#fff;
+}
+.shopcheck .checkinfo{
+	display: inline;
+	font-size:14px;
+	float: left;
+	padding: 5px 10px;
+	margin-left: 10px;
+}
+.shopcheck .buy{
+	font-size:14px;
+	float: right;
+	color:#fff;
+	margin-right: 10px;
+	padding: 5px 10px;
+	border:2px solid white;
+}
+.shopcheck_hide{
+	display: none;
+}
+.shopcheck_show{
+	display:block;
 }
 .alert
 {
@@ -167,4 +197,10 @@ body{
 	color:#31708F;
 	background-color:#b9edf7;
 	border-color:#bce8f1;
+}
+
+.footer{
+	width:100%;
+	height:200px;
+	background-color:#f6f9fa;
 }
