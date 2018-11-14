@@ -43,14 +43,17 @@ body{
 }
 .header .nav .navli{
 	display: inline;
+	
 }
 
 .header .nav a{
 	font-size:20px;
-	padding:40px 20px;
+	padding:40px 20px 50px 20px;
+	border-right:1px solid #ffffff3d;
 }
 .header .nav a{
 	color:#fff;
+	transition-duration: 0.2s;
 }
 .header .nav a:hover{
 	background-color:#F07818;
@@ -64,7 +67,7 @@ body{
 }
 .header-info a{
 	font-size:20px;
-	padding:40px 20px;
+	padding:40px 20px 50px 20px;
 }
 .header-info a:hover{
 	background-color:#F07818;
@@ -201,6 +204,9 @@ body{
 
 .footer{
 	width:100%;
-	height:200px;
+	padding:5em 0;
 	background-color:#f6f9fa;
+}
+.footer h4{
+	text-align:center;
 }
